@@ -13,6 +13,7 @@ public interface Actions {
      */
     void openUrl(String url);
 
+
     /**
      * 清除cookies
      */

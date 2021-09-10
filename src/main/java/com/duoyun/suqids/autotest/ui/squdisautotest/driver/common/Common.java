@@ -26,7 +26,7 @@ public class Common {
         try {
             if (element.contains("//") || curElementType.equals("xpath")) { //element is xpath
                 anaElement = By.xpath(element);
-            } else if (element.contains(".") || element.contains("#")) { // element is css selector
+            } else if (element.contains(".") || element.contains("#")||curElementType.equals("css")) { // element is css selector
                 anaElement = By.cssSelector(element);
             } else if(curElementType.equals("name")){ // element is name
                 anaElement = By.name(element);

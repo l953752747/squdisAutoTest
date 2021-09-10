@@ -27,6 +27,7 @@ public class ActionsImpl implements Actions {
         Selenide.open(url);
     }
 
+
     public void clearCookies(){
         Selenide.clearBrowserCookies();
     }
@@ -66,6 +67,7 @@ public class ActionsImpl implements Actions {
 
     public void click(String element,String ...elementType){
         By elementLocator = isElementLoaded(element,elementTimeout,elementType);
+        scrollToElement(element,elementType);
         Selenide.$(elementLocator).click();
     }
 

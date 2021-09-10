@@ -30,6 +30,11 @@ public class testPass extends SqudisAutoTestApplicationTests {
         squidsPage.inputPassword();
         squidsPage.clickLoginButton();
     }
+
+    @Test
+    public void createAWSMySQL(){
+
+    }
     private void loginSquids(){
         loginService.loginSquids();
     }
