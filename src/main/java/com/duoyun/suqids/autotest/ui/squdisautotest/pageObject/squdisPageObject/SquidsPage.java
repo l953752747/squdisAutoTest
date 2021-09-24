@@ -1,6 +1,15 @@
 package com.duoyun.suqids.autotest.ui.squdisautotest.pageObject.squdisPageObject;
 
 public interface SquidsPage {
+
+    /**
+     * 点击私密链接的高级
+     */
+    void clickSslConnect();
+    /**
+     * 点击进入网站
+     */
+    void clickUrlClick();
     /**
      * 点击进入登录页面
      */

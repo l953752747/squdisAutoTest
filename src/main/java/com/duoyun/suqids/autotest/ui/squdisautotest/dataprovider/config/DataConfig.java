@@ -15,7 +15,7 @@ public class DataConfig {
     @Bean
     public DataMocker dataMocker(){
         DataMocker mocker = new DataMocker();
-        mocker.browser = browser;
+        mocker.browser=browser;
         return mocker;
     }
 }

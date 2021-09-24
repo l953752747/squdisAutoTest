@@ -13,8 +13,9 @@ public class LoginPageImpl implements LoginPage {
     Actions actions;
 
     public void loginSquids() {
-        String url = "https://test.squids.io";
+        String url = "https://www.myrds.io";
         actions.openUrl(url);
 
     }
 }
+   

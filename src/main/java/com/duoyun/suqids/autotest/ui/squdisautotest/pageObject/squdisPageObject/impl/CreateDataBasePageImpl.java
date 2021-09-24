@@ -59,6 +59,9 @@ public class CreateDataBasePageImpl implements CreateDataBasePage {
     private final static String Bc16m64lxElement = "//*[@class='ant-tabs-content ant-tabs-content-top']/div[1]/div/div[3]/label[12]";
     private final static String Bc32m128lxElement = "//*[@class='ant-tabs-content ant-tabs-content-top']/div[1]/div/div[3]/label[13]";
     private final static String Bc48m192lxElement = "//*[@class='ant-tabs-content ant-tabs-content-top']/div[1]/div/div[3]/label[14]";
+    private final static String DatabaseAliasElement = "//*[@class='alias_box']/div/div[2]/div/div/input";
+    private final static String AdminAccountElement = "//*[@class='account_box']/div/div[2]/div/div/input";
+    private final static String PasswordElement = "//*[@class='account_box']/div[2]/div[2]/div/div/span/input";
 
 
     @Autowired
@@ -313,12 +316,23 @@ public class CreateDataBasePageImpl implements CreateDataBasePage {
         }
     }
 
-
+    /**
+     * 使用默认的数据库别名
+     */
     public void inputDataBaseAlias() {
-
+        actions.click(DatabaseAliasElement,"xpath");
     }
 
-    @Override
+    /**
+     * 自定义数据库别名
+     */
+    public void inputDataBaseAlias(String dataBaseAlias){
+        actions.input(DatabaseAliasElement,dataBaseAlias,"xpath");
+    }
+
+    /**
+     * 选择默认版本
+     */
     public void clickDatabaseVersion() {
 
     }
@@ -347,6 +361,7 @@ public class CreateDataBasePageImpl implements CreateDataBasePage {
     public void clickBeginMinute() {
 
     }
+
 
     /**
      * 勾选公网
