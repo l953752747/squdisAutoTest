@@ -1,8 +1,6 @@
 package com.duoyun.suqids.autotest.ui.squdisautotest.demo;
 
-import com.codeborne.selenide.Selenide;
 import com.duoyun.suqids.autotest.ui.squdisautotest.SqudisAutoTestApplicationTests;
-import com.duoyun.suqids.autotest.ui.squdisautotest.dataprovider.DataMocker;
 import com.duoyun.suqids.autotest.ui.squdisautotest.pageObject.squdisPageObject.CreateDataBasePage;
 import com.duoyun.suqids.autotest.ui.squdisautotest.pageObject.squdisPageObject.SquidsPage;
 import com.duoyun.suqids.autotest.ui.squdisautotest.service.LoginService;
